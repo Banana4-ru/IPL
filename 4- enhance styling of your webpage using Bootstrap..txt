@@ -1,5 +1,140 @@
 exp4-Aim:Write a program to enhance styling of your webpage using Bootstrap.
 
+simple code *******
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Serenity - Perfume</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url('wallpaper.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-family: 'Georgia', serif;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      color: #4b0082;
+      padding: 30px 0;
+    }
+    header h1 {
+      font-size: 60px;
+      font-weight: bold;
+    }
+    header p {
+      font-style: italic;
+      font-size: 24px;
+    }
+    .product-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    .btn-dark:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Serenity</h1>
+    <p>Alchemy of Aroma – Aura of your Aroma</p>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Serenity</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Product Section -->
+  <div class="container text-center mt-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="1.jpeg" class="card-img-top" alt="Timeless">
+          <div class="card-body">
+            <h5 class="card-title">Timeless</h5>
+            <p class="card-text">Rs. 500</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="2.jpeg" class="card-img-top" alt="Evergreen">
+          <div class="card-body">
+            <h5 class="card-title">Evergreen</h5>
+            <p class="card-text">Rs. 1000</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card product-card">
+          <img src="3.jpeg" class="card-img-top" alt="Craze">
+          <div class="card-body">
+            <h5 class="card-title">Craze</h5>
+            <p class="card-text">Rs. 1500</p>
+            <a href="#" class="btn btn-dark">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made by <strong>Shruti Thakur</strong> | Department of IT | APSIT</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +178,6 @@ box-shadow: 0 0 10px rgba(0,0,0,0.1);
 .list-group-item:first-child {
 border-top-right-radius: 0;
 
-Department of Information Technology | APSIT
 
 border-top-left-radius: 0;
 }
@@ -71,7 +205,7 @@ padding: 10px 20px;
 background-color: #333;
 color: #f1f1f1;
 
-Department of Information Technology | APSIT
+
 
 border-radius: 0;
 transition: .2s;
@@ -99,7 +233,7 @@ color: #777;
 text-decoration: none;
 }
 
-Department of Information Technology | APSIT
+
 
 </style>
 </head>
@@ -128,7 +262,7 @@ href="#">Home</a></li>
 </div>
 </div>
 
-Department of Information Technology | APSIT
+
 
 </nav>
 
@@ -157,7 +291,7 @@ alt="Scent" class="d-block w-100" />
 </div>
 </div>
 
-Department of Information Technology | APSIT
+
 
 <button class="carousel-control-prev" type="button" data-bs-
 target="#myCarousel" data-bs-slide="prev">
@@ -189,7 +323,7 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.j
 </div>
 <div class="col-sm-4">
 
-Department of Information Technology | APSIT
+
 
 <div class="thumbnail">
 <img src="2.jpeg" alt="Evergreen">
@@ -217,7 +351,7 @@ Department of Information Technology | APSIT
 <script>
 $(document).ready(function(){
 
-Department of Information Technology | APSIT
+
 
 // Initialize Tooltip
 $('[data-toggle="tooltip"]').tooltip();
@@ -231,4 +365,6 @@ con:-Using Bootstrap simplifies webpage styling by providing a responsive, consi
 modern design framework. It accelerates development with ready-to-use components and
 utilities. Overall, Bootstrap enhances user experience and ensures your site looks professional
 across all devices.
+
+
 
