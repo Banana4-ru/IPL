@@ -1,0 +1,234 @@
+exp4-Aim:Write a program to enhance styling of your webpage using Bootstrap.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Perfume</title>
+
+<!-- Bootstrap 5.3 CSS (remove older Bootstrap 3 to avoid conflicts) -->
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+rel="stylesheet" crossorigin="anonymous">
+
+<style>
+body {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+Department of Information Technology | APSIT
+
+background-image: url(wallpaper.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.header-text {
+font-size: 60px; /* bigger Serenity */
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+.tagline {
+font-size: 28px; /* larger tagline */
+font-style: italic;
+margin-bottom: 10px;
+}
+.carousel-box {
+border: 2px solid #007bff;
+padding: 15px;
+border-radius: 8px;
+max-width: 600px;
+margin: 20px auto;
+background-color: #f8f9fa;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.list-group-item:first-child {
+border-top-right-radius: 0;
+
+Department of Information Technology | APSIT
+
+border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+border-bottom-right-radius: 0;
+border-bottom-left-radius: 0;
+}
+
+/* Remove border and add padding to thumbnails */
+.thumbnail {
+padding: 0 0 15px 0;
+border: none;
+border-radius: 0;
+}
+
+.thumbnail p {
+margin-top: 15px;
+color: #555;
+}
+
+/* Black buttons with extra padding and without rounded borders */
+.btn {
+padding: 10px 20px;
+background-color: #333;
+color: #f1f1f1;
+
+Department of Information Technology | APSIT
+
+border-radius: 0;
+transition: .2s;
+}
+
+/* On hover, the color of .btn will transition to white with black text */
+.btn:hover, .btn:focus {
+border: 1px solid #333;
+background-color: #fff;
+color: #000;
+}
+
+footer {
+background-color: #2d2d30;
+color: #f5f5f5;
+padding: 32px;
+}
+
+footer a {
+color: #f5f5f5;
+}
+
+footer a:hover {
+color: #777;
+text-decoration: none;
+}
+
+Department of Information Technology | APSIT
+
+</style>
+</head>
+<body>
+<div class="container text-center my-4">
+<h1 class="header-text">Serenity</h1>
+<p class="tagline">Alchemy of Aroma</p>
+<p>Aura of your Aroma...</p>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container">
+<a class="navbar-brand" href="#">Serenity</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item active"><a class="nav-link"
+href="#">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Page 1</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Page 2</a></li>
+<li class="nav-item"><a class="nav-link" href="#">Page 3</a></li>
+</ul>
+</div>
+</div>
+
+Department of Information Technology | APSIT
+
+</nav>
+
+<div class="carousel-box">
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+<ol class="carousel-indicators">
+<li data-bs-target="#myCarousel" data-bs-slide-to="0"
+class="active"></li>
+<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+</ol>
+
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img src="honeycomb.png" alt="Bloom" class="d-block w-100" />
+</div>
+<div class="carousel-item">
+<img src="1-890x530.png" alt="Bless" class="d-block w-100" />
+</div>
+<div class="carousel-item">
+
+<img src="sample-png-elegant-perfume-bottle-sits-delicate-cherry-
+blossoms-creating-fresh-springtime-mood-would-be-ideal-390948249.webp"
+
+alt="Scent" class="d-block w-100" />
+</div>
+</div>
+
+Department of Information Technology | APSIT
+
+<button class="carousel-control-prev" type="button" data-bs-
+target="#myCarousel" data-bs-slide="prev">
+
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-
+target="#myCarousel" data-bs-slide="next">
+
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>
+</div>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js
+" crossorigin="anonymous"></script>
+<div class="row text-center">
+<div class="col-sm-4">
+<div class="thumbnail">
+<img src="1.jpeg" alt="Timeless">
+<p><strong>Timeless</strong></p>
+<p>Rs.500</p>
+<button class="btn">Buy</button>
+</div>
+</div>
+<div class="col-sm-4">
+
+Department of Information Technology | APSIT
+
+<div class="thumbnail">
+<img src="2.jpeg" alt="Evergreen">
+<p><strong>Evergreen</strong></p>
+<p>Rs.1000</p>
+<button class="btn">Buy</button>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="thumbnail">
+<img src="3.jpeg" alt="Craze">
+<p><strong>Craze</strong></p>
+<p><Rs class="1500"></Rs></p>
+<button class="btn">Buy</button>
+</div>
+</div>
+</div>
+<footer class="text-center">
+<a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+<span class="glyphicon glyphicon-chevron-up"></span>
+</a><br><br>
+<p>Made By Shruti Thakur</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+
+Department of Information Technology | APSIT
+
+// Initialize Tooltip
+$('[data-toggle="tooltip"]').tooltip();
+})
+
+</body>
+</html>
+
+
+con:-Using Bootstrap simplifies webpage styling by providing a responsive, consistent, and
+modern design framework. It accelerates development with ready-to-use components and
+utilities. Overall, Bootstrap enhances user experience and ensures your site looks professional
+across all devices.
+

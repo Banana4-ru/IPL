@@ -1,0 +1,172 @@
+exp6-Aim: Write a program to apply validations to Registration Form.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Document</title>
+<style>
+legend {
+text-align: center;
+font-size: 20px;
+color: #000000;
+font-family: 'Times New Roman', Times, serif;
+}
+
+Department of Information Technology | APSIT
+
+h1 {
+text-align: center;
+color: #000000;
+font-size: 50px;
+background-color: beige;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+text-align: left;
+background-color: #81d4d0;
+font-size: 15px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#f1 {
+background-color: #d4bfd4;
+border: 2px solid #000000;
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+}
+button {
+background-color: rgb(255, 255, 255);
+}
+</style>
+
+Department of Information Technology | APSIT
+
+</head>
+<body>
+<h1>Registration Form</h1>
+<center>
+<form name="reg" action="#" method="get" onsubmit="return val()">
+<fieldset id="f1">
+<legend>User Personal Information</legend>
+
+Enter your full Name:<br />
+<input type="text" placeholder="abc" name="n" required /><br /><br />
+
+Enter your Email:<br />
+<input type="email" placeholder="abc@gmail.com" name="email" required
+/><br /><br />
+
+Enter your Password:<br />
+<input type="password" placeholder="********" name="pw" required /><br /><br
+/>
+
+Confirm your Password:<br />
+<input type="password" placeholder="********" name="cpw" required /><br
+/><br />
+
+Enter your Gender:<br />
+<input type="radio" name="gen" value="Female" />Female<br />
+
+Department of Information Technology | APSIT
+
+<input type="radio" name="gen" value="Male" />Male<br />
+<input type="radio" name="gen" value="Others" />Others<br /><br />
+
+Enter your Address:<br />
+<textarea rows="4" cols="50" placeholder="Enter your address" name="address"
+required></textarea><br /><br />
+
+Enter your Phone-Number:<br />
+<input type="text" size="2" value="+91" readonly />
+<input type="tel" placeholder="1234567890" name="phone" required /><br
+/><br />
+</fieldset>
+<button type="submit">Submit</button>
+</form>
+</center>
+
+<script>
+function val() {
+let form = document.forms["reg"];
+
+// Validate Name - only letters and spaces
+let n = form.n.value.trim();
+if (!/^[a-zA-Z\s]+$/.test(n)) {
+alert("Name should contain only letters and spaces.");
+
+Department of Information Technology | APSIT
+
+form.n.focus();
+return false;
+}
+
+// Validate Email contains ".com"
+let email = form.email.value.trim();
+if (!email.includes(".com")) {
+alert("Email must contain '.com'.");
+form.email.focus();
+return false;
+}
+
+// Validate Password length
+let pw = form.pw.value;
+if (pw.length < 8) {
+alert("Password must be at least 8 characters long.");
+form.pw.focus();
+return false;
+}
+
+// Validate Password match
+let cpw = form.cpw.value;
+if (pw !== cpw) {
+alert("Passwords do not match.");
+
+Department of Information Technology | APSIT
+
+form.cpw.focus();
+return false;
+}
+
+// Validate Gender selected
+let genderSelected = false;
+let genderRadios = form.gen;
+for (let i = 0; i < genderRadios.length; i++) {
+if (genderRadios[i].checked) {
+genderSelected = true;
+break;
+}
+}
+if (!genderSelected) {
+alert("Please select your gender.");
+return false;
+}
+
+// Validate Phone Number - digits only and exactly 10 digits
+let phone = form.phone.value.trim();
+if (!/^\d{10}$/.test(phone)) {
+alert("Phone number must be exactly 10 digits.");
+form.phone.focus();
+return false;
+
+Department of Information Technology | APSIT
+
+}
+
+// All validations passed
+alert("Form submitted successfully!");
+return true;
+}
+</script>
+
+</body>
+</html>
+
+con:In this experiment, applying validations to the registration form helped ensure that all user inputs met
+the required criteria, such as proper email format, password strength, and phone number length. This
+validation process minimized errors and improved data accuracy before submission. Overall, it
+enhanced the user experience by providing immediate feedback and contributed to the security and
+reliability of the application.
+

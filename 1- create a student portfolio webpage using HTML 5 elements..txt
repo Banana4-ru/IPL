@@ -1,0 +1,199 @@
+Exp1:-1  Aim: Write a program to create a student portfolio webpage using HTML 5 elements.
+1
+st
+.html***************8
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shruti</title>
+<center>
+<h1>RESUME</h1>
+</center>
+<style>
+h1{
+font-size: 50px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+font-size: 50px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-image:url(wallpaper.jpg);
+background-repeat:no-repeat;
+
+Department of Information Technology | APSIT
+
+background-size:cover;
+}
+</style>
+</head>
+<body>
+<center>
+<img src="Naruto.jpg" width="50%" height="50%" >
+<h1><a href="basic.html">Personal Information</a></h1>
+<h1><a href="Academics.html">Academics</a></h1>
+<h1><a href="Others.html">Others</a></h1>
+</center>
+</body>
+</html>
+
+basic.html**********
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+P{
+background-color: lightblue;
+font-size: 50px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+background-color:lemonchiffon;
+font-size: 50px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>PERSONAL INFORMATION </h1>
+<h2>Shruti Thakur</h2>
+</center>
+<pre>
+Shruti Thakur
+MoodleID:23104035
+
+Department of Information Technology | APSIT
+
+Mobile Nos:100
+Address:Thane
+Email:23104035@apsit.edu.in
+</pre>
+<ol>
+<li>Hobbies</li>
+<ul type="disc">
+<li>Reading</li>
+<li>Writing</li>
+<li>Travelling</li>
+</ul>
+<li>Skills</li>
+<ul type="star">
+<li>HTML</li>
+<li>SQL</li>
+<li>Python
+</ul>
+<li>Languages Known</li>
+<ul>
+<li>English</li>
+<li>Hindi</li>
+<li>Marathi</li>
+</ul>
+</ol>
+</body>
+</html>
+
+Academics.html**************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<center>
+<h1>Academics</h1>
+</center>
+<style>
+table{
+background-color: rgb(208, 224, 230);
+font-size: 30px;
+
+Department of Information Technology | APSIT
+
+}
+th, td {
+padding: 10px;
+text-align: center;
+}
+body{
+font-size: 50px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-image:url(bg2.webp);
+background-repeat:no-repeat;
+background-size:cover;
+}
+</style>
+</head>
+<body>
+<center>
+<table cellpadding="10" cellspacing="5" background-color="lightblue" border="10"
+<tr>
+<th>Subject</th>
+<th>Marks</th>
+</tr>
+<tr>
+<td>OS</td>
+<td>70</td>
+</tr>
+<tr>
+<td>AT</td>
+<td>71</td>
+</table>
+</center>
+</body>
+</html>
+
+others.html******************8
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<center>
+<h1>Extra-Curricular</h1>
+
+Department of Information Technology | APSIT
+
+</center>
+<style>
+h1{
+font-size: 100px;
+background-color: lightgoldenrodyellow;
+font-family:Georgia, 'Times New Roman', Times, serif;
+}
+body{
+background-color:rgb(217, 255, 255);
+font-size: 50px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+</style>
+</head>
+<body>
+<ol>
+<li>Internships</li>
+<ul type="disc">
+<li>Juniper-Networking</li>
+<li>Cybersecurity</li>
+<li>Cisco-networking</li>
+<li>AWS Cloud</li>
+</ul>
+<li>Experiences</li>
+<ul type="disc">
+<li>IEEE-Content Head (2024)</li>
+<li>GDGoC APSIT- Literature Head (2024-25)</li>
+<li>Google CCD Mumbai - Volunteer (2025)</li>
+<li>Muskurahat Foundation - Intern volunteer (2023) </li>
+</ul>
+<li>Achievements</li>
+<ul type="disc">
+<li>2nd Prize in World Water Day Slogan Writing Competition</li>
+<li>2nd Prize in APSIT Chess Tournament</li>
+</ol>
+</body>
+</html>
+</body>
+</html>

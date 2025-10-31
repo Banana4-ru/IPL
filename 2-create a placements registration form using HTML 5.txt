@@ -1,0 +1,157 @@
+Exp2-Aim: Write a program to create a placements registration form using HTML 5
+Elements.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+h1{
+text-align: center;
+color: #000000;
+font-size: 50px;
+background-color: beige;
+
+Department of Information Technology | APSIT
+
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+body{
+text-align: left;
+background-color: #81d4d0;
+font-size: 15px;
+font-family:Georgia, 'Times New Roman', Times, serif
+}
+#f1 {
+background-color: #d4bfd4;
+border: 2px solid #000000;
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+
+}
+#f2{
+background-color: #b0cee9;
+border: 2px solid #000000;
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+}
+
+Department of Information Technology | APSIT
+
+#f3{
+background-color: #baf3c2;
+border: 2px solid #000000;
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+}
+button{
+background-color:rgb(255, 255, 255)
+
+}
+</style>
+</head>
+<body>
+<h1>Placement Registration Form</h1>
+<form>
+<fieldset id="f1">
+<legend>Basic Information </legend>
+Name:
+<input type="text" placeholder="abc"><br><br>
+Moodle ID:
+<input type="text" placeholder="123456789"><br><br>
+Email:
+
+Department of Information Technology | APSIT
+
+<input type="text" placeholder="abc@gmail.com"><br><br>
+Password:
+<input type="password" placeholder="********"><br><br>
+Confirm Password:
+<input type="password" placeholder="********"><br><br>
+Phone-Number:
+<input type="text" size="2" value="+91">
+<input type="tel" placeholder="1234567890"><br><br>
+Gender:
+<input type="radio" name="gen">Female
+<input type="radio" name="gen">Male
+<input type="radio" name="gen">Other<br><br>
+
+Date of Birth:
+<input type="date"><br><br>
+Address:
+<textarea rows="4" cols="50" placeholder="Enter your address"></textarea><br><br>
+</fieldset>
+
+<fieldset id="f3">
+<legend>Academics</legend>
+Branch:<br>
+<select>
+choose your Branch:
+
+Department of Information Technology | APSIT
+
+<option>IT</option>
+<option>CS</option>
+<option>Mechanical</option>
+<option>Civil</option>
+<option>AIML</option>
+<option>DS</option>
+</select>
+<br><br>
+
+Subjects:<br>
+<input type="checkbox">SE <br>
+<input type="checkbox">DBMS <br>
+<input type="checkbox">OS <br>
+<input type="checkbox">CNS <br>
+<input type="checkbox">IP <br>
+<input type="checkbox">EEB <br>
+<input type="checkbox">ADSA <br>
+<input type="checkbox">ADMT <br><br>
+
+Select Year:
+
+<select>
+choose your year:
+
+Department of Information Technology | APSIT
+
+<option>SE</option>
+<option>TE</option>
+<option>BE</option>
+</select>
+
+Latest CGPA (round-off to nearest integer):<br>
+<input type="number" placeholder="Enter your CGPA"><br><br>
+
+Certifications:<br>
+<textarea rows=4 cols=50 placeholder="Enter your certifications"></textarea><br><br>
+Achievements:<br>
+<textarea rows=4 cols=50 placeholder="Enter your
+Achievements"></textarea><br><br>
+<br><br><br>
+
+</fieldset>
+
+<fieldset id="f2">
+<legend>File Upload</legend>
+Upload CV:
+<input type="file"> ><br><br>
+Upload Certificates:
+<input type="file"><br><br>
+</fieldset>
+
+Department of Information Technology | APSIT
+
+</form>
+<center>
+<button type="submit">Submit</button>
+</center>
+</body>
+</html>

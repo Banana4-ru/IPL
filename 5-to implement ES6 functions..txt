@@ -1,0 +1,75 @@
+exp5-Write a program to implement ES6 functions.
+
+Normal function**********
+fun.js***
+function nos(num){
+if (num % 2 ==0)
+console.log("This nos is even " + num);
+else
+console.log("This nos is odd "+ num);
+}
+nos(15);
+nos(4);
+nos(17);
+
+Annoymous with normal parameter & default parameter*********
+annoymous.js*****
+//anms normal paramter
+let ans=function (a)
+{ let cube;
+cube=a*a*a
+console.log("cube of no "+a+ " is " +cube);
+}
+ans(5);
+
+//anms default parameter
+let fib = function (n,a=0,b=1){
+
+let i=1;
+console.log(a,b);
+for(let i=1; i < n; i++){
+c=a+b;
+
+
+console.log(c);
+a=b;
+b=c;
+
+}
+
+}
+
+fib(10);
+
+
+arrow.js******************
+//rest function
+function add(...b)
+{let sum=0;
+for (let i of b){
+sum=sum+i
+
+
+}
+console.log(sum);
+}
+add(2,3);
+add(2,3,4,5,7);
+
+Normal Arrow Function**************
+//normal arrow function
+let add = (...b) => {
+let sum = 0;
+for (let i of b) {
+sum += i;
+}
+console.log(sum);
+}
+
+add(2, 3);
+add(2,10,30,40);
+
+
+con:-ES6 functions, especially arrow functions, provide a concise and readable syntax for writing
+JavaScript functions. They improve code clarity and support modern features like default
+parameters and template literals, making JavaScript development more efficient.

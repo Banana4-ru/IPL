@@ -1,0 +1,175 @@
+Exp3-Write a program to design home page of commercial website and apply
+different CSS selectors to the same.
+
+html*************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+h1{
+text-align: center;
+color: #1ce2d8;
+font-size: 50px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+h2{
+text-align: left;
+color: #f8f8f8;
+font-size: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body{
+
+Department of Information Technology | APSIT
+
+text-align: left;
+font-size: 15px;
+font-family:Georgia, 'Times New Roman', Times, serif
+}
+#f1 {
+background-color: rgba(255, 255, 255, 0.514);
+border: 2px solid #000000;
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+}
+button{
+background-color:rgb(255, 255, 255)
+}
+</style>
+</head>
+<link rel="stylesheet" href="h.css" />
+<body>
+<img src="ani2.jpg" alt="Animation Image" width="100%" height="100%"
+style="opacity: 0.5; z-index: ;">
+<h1>World of Animation</h1>
+<center>
+<pre>
+Unlock your creativity and bring stories to life with our comprehensive Animation
+Course!
+Whether you're a beginner or looking to refine your skills, this course covers
+everything from basic principles
+to advanced techniques in 2D and 3D animation. Learn industry-standard software,
+master character design, motion graphics, and storytelling,
+and build a professional portfolio to jumpstart your career in animation.
+</pre>
+</center>
+<h2>Course Highlights</h2>
+<ol>
+<pre>What’s in the Course?</pre>
+<ul type="disc">
+<li>Animation basics and principles</li>
+<li>Character design and storytelling</li>
+<li>2D and 3D animation techniques</li>
+<li>Hands-on projects using industry software</li>
+<li> Portfolio building for career success</li>
+</ul>
+</ol>
+
+Department of Information Technology | APSIT
+
+<form>
+<fieldset id="f1">
+<legend>Registration for Course</legend>
+Name:
+<input type="text" placeholder="abc"><br><br>
+Email:
+<input type="text" placeholder="abc@gmail.com"><br><br>
+Phone-Number:
+<input type="text" size="2" value="+91">
+<input type="tel" placeholder="1234567890"><br><br>
+Gender:
+<input type="radio" name="gen">Female
+<input type="radio" name="gen">Male
+<input type="radio" name="gen">Other<br><br>
+Date of Birth:
+<input type="date"><br><br>
+<center>
+<button type="submit">Submit</button>
+</center>
+</fieldset>
+</form>
+<a href="google.com" target="_top">
+<button>More Info</button>
+</a>
+</right>
+</body>
+</html>
+
+CSS*******************
+@keyframes fadeInSlide {
+0% {
+opacity: 0;
+transform: translateY(-20px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+h1 {
+
+Department of Information Technology | APSIT
+
+animation: fadeInSlide 2s ease forwards;
+color: #020202;
+text-align: center;
+font-size: 50px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+body{
+text-align: left;
+z-index: -1;
+background-repeat:no-repeat;
+background-size: cover;
+font-size: 15px;
+font-family:Georgia, 'Times New Roman', Times, serif
+}
+#f1 {
+background-color: white;
+border: 2px solid #000000;
+padding: 20px;
+margin: 20px;
+border-radius: 10px;
+}
+button{
+background-color:rgb(255, 255, 255)
+}
+li{
+color: black;
+font-size: 20px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+pre{
+color: black;
+font-size: 20px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+legend{
+color: #363636;
+font-size: 25px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+form{
+background-color: rgba(255, 255, 255, 0.8);
+padding: 1px;
+
+Department of Information Technology | APSIT
+
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+img{
+opacity: o.3;
+z-index: -1;
+}
+
+con:-This experiment helped me understand how different CSS selectors (element,
+class, id, pseudo-class, attribute, and descendant selectors) can be used to style
+specific parts of a webpage efficiently. Applying these selectors improved the
+structure, maintainability, and interactivity of the commercial website’s
+homepage design.
+

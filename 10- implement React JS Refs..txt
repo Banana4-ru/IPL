@@ -1,0 +1,64 @@
+exp10-Write a program to implement React JS Refs.
+
+Studentref.js***********
+import React, { Component } from 'react';
+
+export class Studentref extends Component {
+
+constructor()
+{
+super();
+this.Studentref=React.createRef();
+}
+
+change=()=>{
+this.Studentref.current.style.fontSize='100px';
+this.Studentref.current.style.fontFamily='Lucida Handwriting';
+this.Studentref.current.style.backgroundColor='yellow';
+}
+
+hideContent=()=>{
+this.Studentref.current.style.display='none';
+}
+render(){
+return(
+<div>
+<h1>Demo for Ref using class component</h1>
+<input type='text' ref={this.Studentref} />
+<br /><br />
+<button onClick={this.change}>Click Me</button>
+<button onClick={this.hideContent}>Click to Hide</button>
+</div>
+)
+}
+}
+export default Studentref;
+
+App.js**********
+import React from 'react';
+import './App.css';
+import Studentref from './Studentref';
+
+function App() {
+return (
+<div className="App">
+<Studentref/>
+
+</div>
+);
+}
+
+export default App;
+
+App.css********
+.App {
+text-align: center;
+margin-top: 50px;
+font-family: Arial, sans-serif;
+}
+
+con:This program demonstrates how to use Refs in React JS to directly access and manipulate
+DOM elements. Refs are useful when we need to control focus, trigger animations, or modify
+styles without re-rendering the component. By using React.createRef(), we can
+reference elements cleanly within class components. It provides a powerful way to bridge the
+gap between React and the actual DOM when needed.

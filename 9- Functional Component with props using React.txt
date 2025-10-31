@@ -1,0 +1,133 @@
+exp9-Aim: Write a program to demonstrate Functional Component with props using React
+JS.
+
+
+1.Code:*****************
+Employee.js*****
+
+import React from "react";
+function Employee(props){
+return (
+<div>
+<h2>Employee name:{props.name}</h2>
+<h2>Employee's Department:{props.department}</h2>
+<h2>Employee's Salary:{props.salary}</h2>
+</div>
+)
+}
+
+
+
+export default Employee;
+
+App.js
+import './App.css';
+
+import Employee from './Employee';
+
+function App() {
+return (
+<div className="App">
+<h1>Demo for Props using Function Component</h1>
+<Employee name="Shruti" department="IT" salary="50000"/>
+
+</div>
+);
+}
+
+export default App;
+
+
+2.Code:
+Count.js*************
+import React, { Component } from 'react';
+
+class Count extends Component {
+constructor() {
+super();
+this.state = {
+count: 0
+};
+}
+
+updatestate = () => {
+this.setState({
+count: this.state.count + 1
+
+Department of Information Technology | APSIT
+
+});
+}
+
+decrementstate = () => {
+this.setState({
+count: this.state.count - 1
+});
+}
+
+render() {
+return (
+<div>
+<h1>Demo for states using Class Component</h1>
+<h1>Count is: {this.state.count}</h1>
+<button onClick={this.updatestate}>Increment</button> <br /><br />
+<button onClick={this.decrementstate}>Decrement</button>
+</div>
+);
+}
+}
+
+export default Count;
+
+class.js ***********
+import React, { Component } from 'react';
+
+
+
+export class Class extends Component {
+constructor() {
+super();
+this.state = {
+count: 0
+};
+}
+
+updatestate = () => {
+this.setState({
+count: this.state.count + 1
+});
+}
+
+render() {
+return (
+<div>
+<h1>Count: {this.state.count}</h1>
+<button onClick={this.updatestate}>Increment</button>
+</div>
+);
+}
+}
+
+
+
+App.js*******
+import React from 'react';
+import Count from './Count';
+import { Class } from './Class';
+
+function App() {
+return (
+<div>
+<Count />
+<hr />
+<Class />
+</div>
+);
+}
+
+export default App;
+
+con:-Functional components in React provide a clean and simple way to create reusable UI
+elements. By using props, they become dynamic and flexible, allowing data to be passed from
+parent to child components. This approach promotes better code organization and easier
+maintenance in React applications.

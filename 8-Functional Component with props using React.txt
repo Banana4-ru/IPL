@@ -1,0 +1,352 @@
+exp8-Aim: Write a program to demonstrate Functional Component with props using React
+JS.
+
+
+
+📁 src/App.js
+import React from "react";
+import Welcome from "./Welcome";
+
+function App() {
+  return (
+    <div>
+      <h1>Functional Component with Props Example</h1>
+      <Welcome name="Shruti" college="APSIT" />
+      <Welcome name="Jigyasha" college="APSIT" />
+      <Welcome name="Siddhi" college="APSIT" />
+    </div>
+  );
+}
+
+export default App;
+
+📁 src/Welcome.js
+import React from "react";
+
+// Functional Component receiving props
+function Welcome(props) {
+  return (
+    <div>
+      <h2>Hello, {props.name}!</h2>
+      <p>Welcome to {props.college}.</p>
+      <hr />
+    </div>
+  );
+}
+
+export default Welcome;
+
+▶️ How to Run
+
+Open VS Code.
+
+Run these commands in the terminal:
+
+npx create-react-app exp8
+cd exp8
+npm start
+
+Write a program to demonstrate Class Component with Props using React JS.
+
+📘 Code Example
+📁 src/App.js
+import React from "react";
+import Welcome from "./Welcome";
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <h1>Class Component with Props Example</h1>
+        <Welcome name="Shruti" college="APSIT" />
+        <Welcome name="Gourav" college="APSIT" />
+        <Welcome name="Siddhi" college="APSIT" />
+      </div>
+    );
+  }
+}
+
+export default App;
+
+📁 src/Welcome.js
+import React from "react";
+
+// Class Component using props
+class Welcome extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Hello, {this.props.name}!</h2>
+        <p>Welcome to {this.props.college}.</p>
+        <hr />
+      </div>
+    );
+  }
+}
+
+export default Welcome;
+
+▶️ How to Run
+
+Open VS Code terminal.
+
+Run:
+
+npx create-react-app exp8class
+cd exp8class
+npm start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.Function Component
+Myfunc.js
+import './a.css';
+import Emma from './download.jpeg';
+function Myfuncomp() {
+return(
+
+<div>
+<h1>Emma Watson</h1>
+<center><img src={Emma} alt="Emma" height={400} width={300}/></center>
+<center>
+<h2>Be Yourself</h2>
+
+Department of Information Technology | APSIT
+
+<p>Emma Charlotte Duerre Watson is an English actress, model, and activist.
+She rose to prominence with her role as Hermione Granger in the Harry Potter film
+series,
+which spanned from 2001 to 2011.
+Watson has since established herself as a versatile actress, starring in films such as
+"The Perks of Being a Wallflower" (2012), "The Bling Ring" (2013), and "Beauty
+and the Beast" (2017).</p>
+<a href="https://twitter.com/EmmaWatson" target="_blank" rel="noopener
+noreferrer">Follow Emma on Twitter</a>
+</center>
+</div>
+)
+}
+export default Myfuncomp;
+
+App.js
+import Emma from './download.jpeg';
+import './App.css';
+
+import Myclasscomp from './Myclasscomp';
+
+function App() {
+return (
+<div className="App">
+
+Department of Information Technology | APSIT
+
+<h1>Shruti Thakur</h1>
+
+<Myclasscomp/>
+</div>
+);
+}
+
+export default App;
+
+a.css
+h1{
+font-size: 60px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+}
+p {
+text-align: center;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: normal;
+}
+h2{
+font-size: 60px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+Department of Information Technology | APSIT
+
+font-weight: bold;
+}
+img {
+max-width: 300px;
+height: auto;
+display: block;
+margin: 0 auto; /* centers the image horizontally */
+border-radius: 8px; /* optional: to make corners rounded */
+object-fit: cover; /* ensures the image fills the box nicely */
+}
+
+
+2.Class Component
+CarModel.js
+import React, { Component } from 'react';
+import './a.css';
+
+// Import images
+import img1 from './images.jpeg';
+import mercedesWebp from './mercedes image.webp';
+import mercedesLogo from './mercedeslogo.jpeg';
+
+class CarModel extends Component {
+constructor(props) {
+super(props);
+this.state = {
+brand: 'Mercedes',
+model: 'Model S',
+year: 2023,
+color: 'Grey',
+};
+}
+
+render() {
+const { brand, model, year, color } = this.state;
+
+Department of Information Technology | APSIT
+
+return (
+<div className="car-card">
+<h2>Car Information</h2>
+<p><strong>Brand:</strong> {brand}</p>
+<p><strong>Model:</strong> {model}</p>
+<p><strong>Year:</strong> {year}</p>
+<p><strong>Color:</strong> {color}</p>
+
+<div className="car-images">
+<img src={img1} alt="Car 1" className="car-image" />
+<img src={mercedesWebp} alt="Mercedes Webp" className="car-image" />
+<img src={mercedesLogo} alt="Mercedes Logo" className="car-image logo" />
+</div>
+</div>
+);
+}
+}
+
+export default CarModel;
+App.js
+import React from 'react';
+import CarModel from './CarModel';
+import './a.css';
+
+Department of Information Technology | APSIT
+
+function App() {
+return (
+<div className="App">
+<h1 className="centered-header">Welcome to Car Info App</h1>
+<CarModel />
+</div>
+);
+}
+
+export default App;
+a.css
+/* Center the Welcome header */
+.centered-header {
+text-align: center;
+margin-top: 40px;
+font-size: 2.8rem;
+color: #004d40;
+font-family: Arial, sans-serif;
+}
+
+/* Car info container */
+.car-card {
+max-width: 700px;
+margin: 50px auto;
+
+Department of Information Technology | APSIT
+
+padding: 25px 35px;
+border: 2px solid #4CAF50;
+border-radius: 10px;
+background-color: #e8f5e9;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+font-family: Arial, sans-serif;
+}
+
+/* Heading inside car card */
+.car-card h2 {
+color: #2e7d32;
+margin-bottom: 20px;
+}
+
+/* Paragraphs inside car card */
+.car-card p {
+font-size: 1.3rem;
+margin: 8px 0;
+}
+
+/* Container for the images */
+.car-images {
+margin-top: 30px;
+display: flex;
+
+Department of Information Technology | APSIT
+
+justify-content: center;
+gap: 25px;
+flex-wrap: wrap;
+}
+
+/* Styling each image */
+.car-image {
+width: 300px;
+height: 200px;
+border-radius: 12px;
+object-fit: cover;
+box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+transition: transform 0.3s ease;
+}
+
+.car-image:hover {
+transform: scale(1.05);
+cursor: pointer;
+}
+
+/* Special styling for logo image */
+.car-image.logo {
+width: 220px;
+height: 220px;
+
+
+
+border-radius: 50%;
+object-fit: contain;
+background-color: white;
+padding: 10px;
+}
+
+
+con:-This React app showcases how to display dynamic car information alongside images using
+class components and clean CSS styling. The well-structured layout and visual enhancements
+provide a user-friendly and attractive interface. It highlights the seamless integration of
+React’s component model with effective design to build engaging web applications.
+
