@@ -15,7 +15,7 @@ console.log("It's zero");
 
 }
 
-Department of Information Technology | APSIT
+
 
 else{
 console.log("It's a negative number",a);
