@@ -23,7 +23,7 @@ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 body{
 
-Department of Information Technology | APSIT
+
 
 text-align: left;
 font-size: 15px;
@@ -69,7 +69,7 @@ and build a professional portfolio to jumpstart your career in animation.
 </ul>
 </ol>
 
-Department of Information Technology | APSIT
+
 
 <form>
 <fieldset id="f1">
@@ -112,7 +112,7 @@ transform: translateY(0);
 }
 h1 {
 
-Department of Information Technology | APSIT
+
 
 animation: fadeInSlide 2s ease forwards;
 color: #020202;
@@ -157,7 +157,7 @@ form{
 background-color: rgba(255, 255, 255, 0.8);
 padding: 1px;
 
-Department of Information Technology | APSIT
+
 
 border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
