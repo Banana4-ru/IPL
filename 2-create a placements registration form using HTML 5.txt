@@ -14,7 +14,7 @@ color: #000000;
 font-size: 50px;
 background-color: beige;
 
-Department of Information Technology | APSIT
+
 
 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
@@ -41,7 +41,7 @@ margin: 20px;
 border-radius: 10px;
 }
 
-Department of Information Technology | APSIT
+
 
 #f3{
 background-color: #baf3c2;
@@ -67,7 +67,7 @@ Moodle ID:
 <input type="text" placeholder="123456789"><br><br>
 Email:
 
-Department of Information Technology | APSIT
+
 
 <input type="text" placeholder="abc@gmail.com"><br><br>
 Password:
@@ -94,7 +94,6 @@ Branch:<br>
 <select>
 choose your Branch:
 
-Department of Information Technology | APSIT
 
 <option>IT</option>
 <option>CS</option>
@@ -120,7 +119,7 @@ Select Year:
 <select>
 choose your year:
 
-Department of Information Technology | APSIT
+
 
 <option>SE</option>
 <option>TE</option>
@@ -147,7 +146,7 @@ Upload Certificates:
 <input type="file"><br><br>
 </fieldset>
 
-Department of Information Technology | APSIT
+
 
 </form>
 <center>
