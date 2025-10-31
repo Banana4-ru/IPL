@@ -54,7 +54,7 @@ updatestate = () => {
 this.setState({
 count: this.state.count + 1
 
-Department of Information Technology | APSIT
+
 
 });
 }
