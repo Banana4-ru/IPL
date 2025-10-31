@@ -22,7 +22,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 background-image:url(wallpaper.jpg);
 background-repeat:no-repeat;
 
-Department of Information Technology | APSIT
+
 
 background-size:cover;
 }
@@ -67,7 +67,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 Shruti Thakur
 MoodleID:23104035
 
-Department of Information Technology | APSIT
+
 
 Mobile Nos:100
 Address:Thane
@@ -111,7 +111,7 @@ table{
 background-color: rgb(208, 224, 230);
 font-size: 30px;
 
-Department of Information Technology | APSIT
+
 
 }
 th, td {
@@ -156,7 +156,7 @@ others.html******************8
 <center>
 <h1>Extra-Curricular</h1>
 
-Department of Information Technology | APSIT
+
 
 </center>
 <style>
